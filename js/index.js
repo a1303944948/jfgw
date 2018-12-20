@@ -249,3 +249,8 @@ $('.index_product_list>a').hover(function(){
 	zj.css('opacity','0');
 	$(this).children('span').stop().slideUp(300);
 })
+
+//如果用户是手机访问则跳转至手机界面
+if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iOS|iPad|Backerry|WebOS|Symbian|Windows Phone|Phone)/i))) {
+	location.href = "http://www.hontech-rdcenter.com/web/jfgw-phone/";
+}
